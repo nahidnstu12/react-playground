@@ -17,7 +17,7 @@ function Main() {
             setLoading(false);
         }
         fetchPosts();
-    },[])
+    },[posts])
     // console.log(posts)
     const indexOfLastPost = currentPage * perPage;
     const indexOfFirstPost = indexOfLastPost - perPage;
