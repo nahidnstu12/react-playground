@@ -19,16 +19,16 @@ function Main() {
         fetchPosts();
     },[posts])
     // console.log(posts)
-    const indexOfLastPost = currentPage * perPage;
-    const indexOfFirstPost = indexOfLastPost - perPage;
-    const currentPosts = posts.slice(indexOfFirstPost,indexOfLastPost);
+    const indexOfLast = currentPage * perPage;
+    const indexOfFirst = indexOfLast - perPage;
+    const currentPages = posts.slice(indexOfFirst,indexOfLast);
 
     const paginate = numb => setCurrentPage(numb);
     return (
         <div className="container my-5">
             <div className="badge badge-info  mb-3 w-100"> <h4 className="d-flex justify-content-center">My Post</h4> </div>
-            <Post posts={currentPosts} loading={loading} />
-            <Pagination perPage={perPage} totalPost={posts.length} paginate={paginate}/>
+            <Post _posts={currentPages} loading={loading} />
+            <Pagination perPage={perPage} _total={posts.length} paginate={paginate}/>
         </div>
     )
 }

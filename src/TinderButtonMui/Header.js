@@ -18,7 +18,8 @@ const useStyles = makeStyles(theme =>({
     },
     icons:{
         padding:'20px',
-        border:'none',
+        // border:'none !important',
+        outline:'none !important',
     },
     logo:{
         height:'40px',
@@ -45,7 +46,7 @@ function Header({backBtn}) {
         )}
         
         <Link to='/'>
-        <img src="./images/tinder-logo.png" alt="" className={classes.logo}/>
+        <img src="./images/tinder-logo.png" alt="tinder" className={classes.logo}/>
         </Link>
         <Link to='/chat'>
         <IconButton className={classes.icons}>

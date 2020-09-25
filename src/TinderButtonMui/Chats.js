@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link,useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import {Avatar,Grid} from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
@@ -17,8 +17,7 @@ const useStyles = makeStyles((theme) => ({
     },
     name:{
         color:'black',
-        listStyle:'none',
-        textDecoration:'none'
+        textDecoration:'none !important'
 
     }
 }));

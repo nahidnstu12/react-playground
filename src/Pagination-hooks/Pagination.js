@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Pagination({perPage,totalPost,paginate}) {
+function Pagination({perPage,_total,paginate}) {
     const pageNumber = [];
-    for(let i = 1;i<= Math.ceil(totalPost/perPage);i++){
+    for(let i = 1;i<= Math.ceil(_total/perPage);i++){
         pageNumber.push(i);
     }
     return (

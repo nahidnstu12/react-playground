@@ -3,7 +3,7 @@ import Header from './Header';
 import {BrowserRouter as Router,Route,Switch,useParams} from 'react-router-dom';
 import Chats from './Chats';
 
-function Home() {
+function TinderHome() {
    
     return (
         <Router>
@@ -46,4 +46,4 @@ const Profile = () =>{
     )
 }
 
-export default Home
+export default TinderHome
