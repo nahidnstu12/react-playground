@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+MuiColor.js
 # testing
 /coverage
 

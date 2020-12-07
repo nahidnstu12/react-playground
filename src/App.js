@@ -4,7 +4,8 @@ import './App.css';
 // import GridTest from './MUI/Grid'
 // import ThemeNesting from './MUI/Theming'
 // import ButtonBase from './MUI/ButtonBase'
-import TinderHome from './TinderButtonMui/Home';
+// import TinderHome from './TinderButtonMui/Home';
+import EmployeeForm from './MUI-Form/EmployeeForm'
 
 
 function App() {
@@ -12,8 +13,11 @@ function App() {
     <div className="App">
      <h3 className="text-danger text-center">React PlayGround</h3>
       {/* <ButtonBase /> */}
-      <TinderHome />
+      {/* <TinderHome /> */}
       {/* <Main /> */}
+      
+      <EmployeeForm />
+
     </div>
   );
 }
